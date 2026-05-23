@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Practice</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #080d18;
+            font-family: 'Syne' sans-serif;
+        }
+
+        header, footer {
+            height: auto;
+            text-align: center;
+            border: 2px rgba(255, 255, 255, .07) solid;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+    </header>
+
+    <section>
+        <div class="sidebar">
+            
+        </div>
+        <div class="main">
+            <div class="top-nav">
+
+            </div>
+            <div class="card-cont">
+                <div class="card one"></div>
+                <div class="card two"></div>
+                <div class="card three"></div>
+            </div>
+            <div class="table-cont">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
+<!-- HARD REQUIREMENTS
+1. Full viewport layout
+Entire page fills viewport
+No vh slicing
+2. Sidebar behavior
+
+Desktop:
+
+fixed width
+full available height
+
+Mobile:
+
+becomes horizontal section
+stacks above cards/content
+3. Card row behavior
+
+Desktop:
+
+cards in single row
+equal width
+gap between them
+
+Tablet/mobile:
+
+cards wrap automatically
+
+Rules:
+
+use flex-wrap
+no media query for every card breakpoint
+4. Content area
+fills remaining space vertically
+scrolls internally if content overflows
+sidebar should NOT affect content scrolling
+5. Header/footer
+natural height
+never shrink
+❌ Forbidden
+CSS Grid
+position absolute/fixed/sticky
+hardcoded viewport math
+float
+calc hacks
+Required concepts
+
+You MUST use:
+
+nested flex containers
+flex-grow
+flex-basis
+flex-wrap
+min-height: 0
+overflow
+media queries
+Hidden difficulty
+
+Most people fail:
+
+making content scroll correctly
+preventing sidebar shrink
+making wrapped cards stay equal width
+handling nested flex overflow -->
