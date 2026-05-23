@@ -22,3 +22,27 @@
     
 </body>
 </html>
+
+<!-- HARD REQUIREMENTS (this is where most people fail)
+1. Full viewport system
+Entire layout must always fill 100vh
+No vh splitting hacks like 10vh + 80vh + 10vh
+2. Independent scrolling zones
+Sidebar scrolls internally if content overflows
+Main scrolls internally if content overflows
+Header/footer must NEVER scroll away inside their containers
+3. Flex-only architecture
+
+Allowed:
+
+display: flex
+flex-direction
+flex-grow / shrink / basis
+overflow
+media queries
+
+Not allowed:
+
+grid
+position absolute/fixed/sticky
+vh slicing layout tricks -->
