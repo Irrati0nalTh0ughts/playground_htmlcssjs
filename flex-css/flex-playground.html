@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Practice</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        section {
+            margin: 50px 0 50px 0;
+        }
+
+        .flex-parent {
+            height: 500px;
+            width: 100vw;
+            border: black 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .flex-children.one {
+            height: 100px;
+            width: 100px;
+            border: red 2px solid;
+        }
+        .flex-children.two {
+            height: 100px;
+            width: 100px;
+            border: blue 2px solid;
+        }
+        .flex-children.three {
+            height: 100px;
+            width: 100px;
+            border: green 2px solid;
+        }
+        .flex-children.four {
+            height: 100px;
+            width: 100px;
+            border: purple 2px solid;
+        }
+        .flex-children.five {
+            height: 100px;
+            width: 100px;
+            border: yellow 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="1st">
+        <div class="flex-parent one">
+            <div class="flex-children one aa"></div>
+            <div class="flex-children one bb"></div>
+            <div class="flex-children one cc"></div>
+        </div>
+    </section>
+    <section class="2nd">
+        <div class="flex-parent two">
+            <div class="flex-children two aa"></div>
+            <div class="flex-children two bb"></div>
+            <div class="flex-children two cc"></div>
+        </div>
+    </section>
+    <section class="3rd">
+        <div class="flex-parent three">
+            <div class="flex-children three aa"></div>
+            <div class="flex-children three bb"></div>
+            <div class="flex-children three cc"></div>
+        </div>
+    </section>
+    <section class="4th">
+        <div class="flex-parent four">
+            <div class="flex-children four aa"></div>
+            <div class="flex-children four bb"></div>
+            <div class="flex-children four cc"></div>
+        </div>
+    </section>
+    </section>
+    <section class="5th">
+        <div class="flex-parent five">
+            <div class="flex-children five aa"></div>
+            <div class="flex-children five bb"></div>
+            <div class="flex-children five cc"></div>
+        </div>
+    </section>
+    
+</body>
+</html>

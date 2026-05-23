@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Challenge</title>
+
+    <style>
+        *, *::before, *::after {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        header, footer {
+            height: 10vh;
+            width: 100%;
+            border: 5px solid blue;
+            
+        }
+
+        #myHero {
+            height: 80vh;
+            width: 100%;
+            border: 5px solid red;
+            display: flex;
+        }
+
+        .side-bar {
+            flex: 0 0 400px;
+            border: 5px solid royalblue;
+        }
+
+        .main {
+            flex-grow: 1;
+            border: 5px solid saddlebrown;
+        }
+
+        /* media */
+        @media (max-width: 480px) {
+
+        #myHero {
+            flex-direction: column;
+        }
+        .side-bar {
+            height: 30vh;
+            width: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+
+    </header>
+
+    <section id="myHero">
+        <div class="side-bar">
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas recusandae aliquid atque sed beatae consectetur quibusdam repellat ullam libero nulla ratione deleniti doloribus possimus, culpa magnam perspiciatis ipsa quae.
+                </p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas recusandae aliquid atque sed beatae consectetur quibusdam repellat ullam libero nulla ratione deleniti doloribus possimus, culpa magnam perspiciatis ipsa quae.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="bottom">
+
+    </footer>
+</body>
+</html>
