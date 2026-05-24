@@ -47,8 +47,12 @@
 
         .sidebar {
             padding: 20px;
-            max-width: 500px;
+            /* max-width: 500px;
             flex: 1 1 auto;
+            ps. this is not fixed width side bar 
+            (below is the fix)*/
+            flex: 0 0 320px;
+
             border: 1px solid #b8ff45;
             overflow-y: scroll;
         }
@@ -58,6 +62,9 @@
             flex-direction: column;
             align-items: center;
             flex-grow: 1;
+            /* Content could overflow horizontally ->
+            with just the code from above to fix see below */
+            overflow: hidden;
         }
 
         .top-nav {
@@ -67,13 +74,19 @@
         }
 
         .card-cont {
-            height: 200px;
+            min-height: 200px;
+            /*  height: 200px; ps. (T^T) artificial garbage -gpt */
             display: flex;
-            align-items: center;
             gap: 30px;
+            padding: 20px;
         }
         .card {
-            padding: 70px 40px 70px 40px;
+            /* padding: 70px 40px 70px 40px;
+            ps. Cards won't be equal with width this way,
+            it'll be content sized... (below is the fix) */
+            flex: 1 1 180px; 
+            max-width: 300px;
+            max-height: 500px;
             align-content:space-evenly;
             border: 1px dashed#b8ff45;
         }
@@ -103,6 +116,14 @@
             }
             .card {
                 width: 100%;
+            }
+
+            /* ps. you forgot content overflow for the table
+            (code block below is the fix) */
+            .table-cont {
+                flex:1;
+                overflow:auto;
+                min-height:0;
             }
 
             .contents {
@@ -138,6 +159,7 @@
             </div>
             <div class="table-cont">
                 <div class="contents">Table / Contents</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo molestias sunt officia natus fugit nulla dolore accusantium animi eveniet perspiciatis dignissimos, vel sint, minus cupiditate consequatur recusandae veritatis incidunt rem excepturi consectetur earum, a cumque culpa? Perferendis fuga optio quam non ad impedit eius mollitia aut tempora corporis vero beatae explicabo, architecto, commodi ex asperiores provident saepe sed animi maiores nemo. Quos aspernatur dolores ipsam libero dolorum, nulla ab modi, amet commodi tempore repellat assumenda enim quas hic, reprehenderit necessitatibus at. Vel eaque saepe assumenda, dicta ab et qui architecto, laborum aut debitis, reprehenderit consequuntur optio ducimus esse. Ipsa, necessitatibus quae dolor deleniti ducimus tempore fuga modi cum illo excepturi! Minus molestias eaque, veritatis et porro doloremque harum tenetur aspernatur odit enim eligendi id fuga asperiores at unde molestiae excepturi libero tempora! Odit reiciendis necessitatibus blanditiis quis dolorem sunt dignissimos similique commodi pariatur autem impedit dolorum nam a doloremque tempore laboriosam exercitationem quia qui, illo tempora aliquid totam voluptas molestias! Commodi a sapiente hic dolorum totam officia tenetur necessitatibus explicabo maxime eos. Dicta enim delectus alias magni dolor obcaecati earum, quod qui, vero itaque odio laudantium rerum similique nulla laborum. Natus architecto, sint magnam iste temporibus voluptatem enim perspiciatis nesciunt optio sunt autem ducimus repellendus suscipit officiis commodi accusantium, asperiores eaque necessitatibus cupiditate iusto quibusdam. Amet ratione, architecto cum, omnis obcaecati quasi pariatur commodi doloremque reiciendis ducimus fugit incidunt eligendi beatae possimus aperiam veritatis consequatur natus ullam iure aliquid laboriosam non similique? Corporis sunt voluptatum recusandae sint modi, libero eum provident qui quae? Temporibus suscipit placeat ipsam? Soluta adipisci libero at, ex, quis amet corporis quidem eos dolore ab omnis in consequatur explicabo vero nisi deleniti enim corrupti aspernatur. Nesciunt aut alias consectetur atque inventore, nulla quis doloribus, aliquid non adipisci esse architecto, repudiandae quas quibusdam! Consectetur aut, aperiam voluptatibus iure adipisci delectus eius culpa ex quo corporis, nihil libero sapiente voluptatem consequuntur distinctio deserunt neque sed. Quibusdam numquam possimus cupiditate totam iure fugiat ipsa voluptatum enim reiciendis tempora ex dolorem iusto sint recusandae pariatur laboriosam amet, fugit quae obcaecati repellendus et officiis eius nulla. Magni, error quia. Minus sequi quas ut quidem fugiat hic, eveniet nisi temporibus. Deserunt quod quas amet labore ipsa soluta sapiente voluptate. Enim iusto eligendi exercitationem provident voluptatem odio laboriosam dicta nisi, quaerat suscipit excepturi qui praesentium quisquam. Officiis praesentium nulla quia, porro placeat quasi fugit illo unde numquam perspiciatis impedit autem odit ipsum aspernatur dolorum soluta nihil nisi repellat quibusdam earum error. Nemo incidunt nam temporibus quisquam voluptatibus voluptate minus qui modi sit accusantium minima, fuga nisi, consequatur veritatis molestiae reiciendis ipsa non illo iusto repellendus rem commodi ab? Modi, praesentium quae explicabo iste nisi, quas quasi velit quisquam aut, perferendis minima voluptatum minus harum. Eum voluptas consequuntur voluptatum atque voluptates quasi eligendi qui in praesentium saepe, adipisci fuga nostrum doloribus voluptate sunt neque sint quam consectetur incidunt ex delectus repellendus et. Laboriosam quae necessitatibus commodi eveniet doloremque assumenda omnis quia voluptate nesciunt fugiat, beatae laborum earum sit quibusdam. Perspiciatis ex qui alias, vitae nam, quaerat excepturi ducimus, aperiam quasi dolores nihil? Architecto similique consectetur fugit laboriosam cupiditate quibusdam ex inventore rerum perferendis, temporibus laborum esse accusantium neque tenetur sequi rem nesciunt soluta, tempore deleniti a! Quisquam ut, officia corrupti placeat eum, iste similique cupiditate blanditiis velit fugit nostrum praesentium, suscipit distinctio. Fugiat ad optio nam? Totam, voluptatibus sequi ea deleniti sed ipsum delectus assumenda itaque nemo esse necessitatibus perferendis obcaecati a, earum est nobis voluptatum rerum veniam. Fuga alias quas odit, architecto adipisci nemo aliquid ut a! Itaque aut illum doloribus mollitia similique praesentium cupiditate placeat provident officiis iusto quae, quasi delectus?
             </div>
         </div>
     </section>
