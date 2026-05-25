@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Practice</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+        }
+
+        body {
+        }
+
+        header, footer {
+        }
+
+        section {
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+    </header>
+
+    <section>
+        <div class="sidebar">
+            <div class="bar">SIDEBAR</div>
+        </div>
+        
+        <div class="main">
+            <div class="toolbar">
+                <div class="searchbar-design">
+                    <p>&#128269</p>
+                </div>
+
+                <a href="" class="button one">Action1</a>
+                <a href="" class="button two">Action2</a>
+                <a href="" class="button three">Action3</a>
+            </div>
+
+            <div class="card-cont">
+                <div class="cards aa"><img src="" alt="" style="height: 200px; width: 100px;"></div>
+                <div class="cards bb"><img src="" alt="" style="height: 200px; width: 100px;"></div>
+                <div class="cards cc"><img src="" alt="" style="height: 200px; width: 100px;"></div>
+                <div class="cards dd"><img src="" alt="" style="height: 200px; width: 100px;"></div>
+                <div class="cards ee"><img src="" alt="" style="height: 200px; width: 100px;"></div>
+            </div>
+
+            <div class="panels-cont">
+                <div class="panel one">Panel</div>
+                <div class="panel two">Pane2</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright"> © 2026 Admin Panel Dashboard - Made with HTML5 & Flexbox only</div>
+    </footer>
+</body>
+</html>
+
+
+<!-- Flexbox Challenge — Admin Analytics Dashboard
+Requirements
+1. Full App Layout
+
+Entire app fills viewport height.
+
+Rules:
+
+no 100vh slicing tricks
+no absolute positioning
+no CSS Grid
+
+Required:
+
+display:flex
+nested flex containers
+min-height:0
+Layout Structure
+HEADER
+-----------------------------------
+LEFT SIDEBAR | MAIN CONTENT
+             |
+             | TOP TOOLBAR
+             | ------------------
+             | KPI CARDS
+             | ------------------
+             | SPLIT PANELS
+             |    LEFT  | RIGHT
+             | ------------------
+FOOTER
+2. Header/Footer
+
+Behavior:
+
+natural height
+never shrink
+always visible
+
+Required:
+
+flex-shrink:0
+3. Sidebar
+
+Desktop:
+
+fixed width
+independently scrollable
+main content must NOT scroll because of sidebar overflow
+
+Mobile:
+
+becomes top horizontal navigation
+items wrap automatically
+
+Hidden trap:
+If you forget proper overflow isolation, the entire page scrolls.
+
+4. Main Content
+
+Must:
+
+fill remaining width
+fill remaining height
+NEVER overflow viewport horizontally
+
+Required:
+
+overflow:hidden
+min-width:0
+nested flex columns
+5. Toolbar
+
+Contains:
+
+search bar
+3 action buttons
+
+Rules:
+
+search expands
+buttons remain content-sized
+on small screens buttons wrap BELOW search
+
+Forbidden:
+
+media query per button
+
+Use:
+
+flex-wrap
+flex-grow
+6. KPI Cards Row
+
+You need 6 cards.
+
+Desktop:
+
+single row
+equal widths
+
+Tablet:
+
+wrap into multiple rows
+
+Mobile:
+
+single column
+
+Rules:
+
+equal widths even with different content lengths
+no hardcoded widths
+no JS
+
+Hidden trap:
+Padding/content can destroy equal sizing if flex values are wrong.
+
+7. Split Panels Section
+
+This is the real test.
+
+Two panels:
+
+Recent Activity
+Notifications
+
+Desktop:
+
+side by side
+equal height automatically
+
+Mobile:
+
+stack vertically
+
+Each panel must:
+
+have internal scrolling
+NOT stretch page height
+preserve header visibility inside panel
+
+Required:
+
+nested flexbox
+min-height:0
+overflow:auto
+
+Most people fail this section.
+
+8. Activity Feed
+
+Inside left panel:
+
+50 fake activity items
+
+Behavior:
+
+panel scrolls internally
+entire page does NOT grow taller
+9. Notifications Panel
+
+Inside right panel:
+
+mixed content:
+alerts
+long messages
+action buttons
+
+Buttons:
+
+stay aligned at bottom of each notification card
+
+Required:
+
+flex column cards
+margin-top:auto
+10. Mobile Requirements
+
+At max-width: 768px:
+
+Sidebar:
+
+moves above content
+horizontal layout
+
+Split panels:
+
+stack vertically
+
+Toolbar:
+
+wraps cleanly
+
+Cards:
+
+wrap naturally
+
+No breakpoint micromanagement.
+
+Forbidden
+CSS Grid
+position:absolute
+height: calc(...)
+vh math hacks
+fixed heights except sidebar width
+JS
+Required Concepts
+
+You MUST use:
+
+flex-grow
+flex-shrink
+flex-basis
+min-height:0
+min-width:0
+overflow:auto
+overflow:hidden
+nested flex containers
+flex-wrap
+Hidden Failure Conditions
+
+Your layout fails if:
+
+Failure 1
+
+Whole page scrolls instead of internal panels.
+
+Failure 2
+
+Cards become uneven widths.
+
+Failure 3
+
+Sidebar shrinks on narrow desktop widths.
+
+Failure 4
+
+Toolbar buttons compress into unreadable sizes.
+
+Failure 5
+
+Panel headers disappear during overflow.
+
+Failure 6
+
+Main content overflows horizontally because of flex children. -->
