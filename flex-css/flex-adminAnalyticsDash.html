@@ -12,19 +12,143 @@
         }
 
         html, body {
+            height: 100%;
         }
 
         body {
+            background-color: #080d18;
+            color: #efecf7;
+            font-family: 'DM Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
         }
 
+        a {
+            text-decoration: none;
+        }
+
+        /* the content will define the dimension */
         header, footer {
+            height: auto;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .logo {
+            padding: 10px 30px 10px 30px;
+            font-size: clamp( 30px, calc(20vw + 1rem), 48px );
+            display: flex;
+            justify-content: baseline;
+            border: 1px solid#b8ff45;
+        }
+
+        .copyright {
+            padding: 25px 30px 25px 30px;
+            text-align: center;
+            font-size: clamp( 8px, calc(1vw + .5rem), 1rem );
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #b8ff45;
         }
 
         section {
-            
+            min-height: 0;
+            flex-grow: 1;
+            display: flex;
         }
 
+        .sidebar {
+            flex: 0 0 360px;
+            overflow-y: auto;
+            text-align: justify;
+            padding: 3px;
+        }
 
+        .main {
+            min-height: 0;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+        }
+
+        .toolbar {
+            padding: 10px;
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #searchbar {
+            max-width: 500px;
+            flex-grow: 1;
+            border: 1px solid #b8ff45;
+            border-radius: 12px;
+            background-color: #080d18;
+        }
+
+        .toolbar .button {
+            color: #7a8aaa;
+        }
+
+        .card-cont {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border: 0 1px 0 1px solid ;
+        }
+
+        .cards {
+            background-color: #131d33;
+        }
+        .cards:hover {
+            background-color: #18243d;
+        }
+
+        .panels-cont {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        .panel {
+            text-align: center;
+            flex-grow: 1;
+            border: 1px dashed #b8ff45;
+        }
+
+        @media (max-width: 480px) {
+            section {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                flex: 0 0 200px;
+            }
+
+            .main {
+                overflow-y: auto;
+            }
+
+            #searchbar {
+                width: 100%;
+                padding: 2px;
+                margin: 6px 0 6px 0;
+            }
+            
+            .card-cont {
+                flex-wrap: wrap;
+                overflow-y: auto;
+                min-height: 300px;
+            }
+
+            .panel {
+                min-height: 300px;
+            }
+        }
 
     </style>
 </head>
@@ -36,13 +160,13 @@
     <section>
         <div class="sidebar">
             <div class="bar">SIDEBAR</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia magnam culpa amet dignissimos maiores aliquid aliquam illo sapiente, earum deleniti ut natus et voluptatum corrupti explicabo soluta eaque maxime consequatur, dolorum assumenda? Vero, necessitatibus harum distinctio temporibus quam officia quos, repellendus tenetur voluptas incidunt, perspiciatis optio sapiente. Eveniet sapiente quisquam iusto eius placeat eum numquam? Quas, architecto, esse obcaecati perferendis consequatur repellendus quibusdam illo error voluptatem quod ab dolorum vitae! Cupiditate, sit animi quidem impedit praesentium optio excepturi, itaque ullam saepe nesciunt repellat? Animi eaque debitis perspiciatis dolores, accusantium sit quia porro itaque, ex quam tempore modi id? Qui laudantium debitis ipsam, distinctio aspernatur suscipit, sapiente aliquam perferendis veritatis assumenda quae eos temporibus optio voluptatibus culpa quos omnis, sit et beatae iusto. Vero esse similique corrupti repudiandae fuga. Alias natus delectus, veritatis rerum consequuntur similique ducimus deserunt nesciunt molestias beatae voluptas reiciendis numquam exercitationem quas consectetur ab unde architecto officia fugiat. Consequuntur quae nostrum saepe rem cupiditate ratione doloribus, nobis, quis earum eveniet unde deleniti hic consequatur iure, tempore voluptates dignissimos? Dolorum nam temporibus possimus accusamus, nobis pariatur adipisci voluptates, repudiandae id beatae nesciunt? Doloremque quam pariatur quaerat eos tempore ullam quia, excepturi dolorum optio ab! Laudantium incidunt minus nisi esse eius mollitia amet maiores ratione dolorum sapiente illum temporibus quia itaque deleniti, sint fugiat. Aut reiciendis autem illo nihil, quae id reprehenderit libero quaerat maxime. Consequatur ipsa porro numquam expedita impedit ipsam, eaque deleniti beatae aliquam nisi nostrum sapiente eum voluptatibus veniam officia? Placeat odit explicabo commodi numquam ut omnis deleniti dolorum repudiandae natus inventore nemo minus ex totam eveniet quo nesciunt provident, vel atque vitae dicta blanditiis sit expedita alias eius! Quis sequi dolor voluptates! Commodi minima a architecto maxime quidem culpa. Tempora, nisi dignissimos. Perspiciatis iusto minus nam commodi vel eveniet beatae iste cupiditate consequatur ducimus, vero, illo voluptates? Eaque, libero unde neque fugit tempore harum laborum illo vitae atque nemo adipisci sed dolorum explicabo pariatur iste. Ipsum ex illo sed fuga aspernatur, odit nam ad voluptas, ratione officia ipsam temporibus mollitia dolor nesciunt est quidem iste doloremque quia quisquam officiis? Ea recusandae vitae laborum maxime doloribus eius expedita quas totam obcaecati, voluptate dolorum nam, repellat corrupti quidem? Debitis earum error qui laudantium explicabo neque facere repudiandae nobis enim tempore saepe maiores, dolor quo voluptatem eos dolorum sit perspiciatis hic, nostrum quis nihil at distinctio asperiores beatae! Rerum eveniet voluptate ipsam iusto voluptatibus ipsum, dolores at, reiciendis, doloremque quaerat nobis eligendi. Maxime eveniet dolor nulla harum deserunt repellat itaque omnis quod pariatur, quam earum nemo perspiciatis, magni hic sequi ducimus ipsum a cumque autem voluptas laborum. Adipisci, id soluta placeat repudiandae eaque animi blanditiis debitis est dolorum quos aspernatur reprehenderit dignissimos veritatis voluptatibus asperiores iure minima excepturi esse saepe eum sed tempore nemo? Eligendi qui cupiditate quae reiciendis nesciunt blanditiis. Doloribus iste natus est sequi vero commodi corporis velit, tempore repudiandae quia veniam ab molestiae unde dicta nesciunt voluptatem, dolor repellendus rerum sapiente quod quisquam debitis! Praesentium ratione tempora veritatis fugiat est, vero eligendi ea aperiam?
         </div>
         
         <div class="main">
             <div class="toolbar">
-                <div class="searchbar-design">
-                    <p>&#128269</p>
-                </div>
+                <input id="searchbar" type="text">
+            
 
                 <a href="" class="button one">Action1</a>
                 <a href="" class="button two">Action2</a>
@@ -56,10 +180,10 @@
                 <div class="cards dd"><img src="" alt="" style="height: 200px; width: 100px;"></div>
                 <div class="cards ee"><img src="" alt="" style="height: 200px; width: 100px;"></div>
             </div>
-
+            
             <div class="panels-cont">
-                <div class="panel one">Panel</div>
-                <div class="panel two">Pane2</div>
+                <div class="panel one">Panel1</div>
+                <div class="panel two">Panel2</div>
             </div>
         </div>
     </section>
